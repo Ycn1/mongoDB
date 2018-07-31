@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "mvc",
+  "dependencies": {
+    "mongodb": "^3.1.1",
+    "swig": "^1.4.2",
+    "uuid": "^3.3.2"
+  },
+  "version": "1.0.0",
+  "main": "1.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

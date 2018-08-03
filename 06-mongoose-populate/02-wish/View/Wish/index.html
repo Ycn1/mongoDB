@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>wish</title>
+
+	<link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+	<div class="wish">
+		{% for item in data %}
+		    	<div class="pep" style= "background:{{item.color}}">
+                    <a href="javascript:;" class="close" data-id = "{{item._id.toString()}}"></a>
+                   {{item.content}}
+                </div> 
+		{% endfor %}
+		
+		
+	</div>
+	<div class="content">
+		<textarea class="text" id="content" cols="30" rows="20"></textarea>
+		<a href="javascript:;">许下心愿</a>
+	</div>
+</body>
+<script src="../static/js/jquery-1.12.4.js"></script>
+<script src="../static/js/jquery.pep.js"></script>
+<script src="../static/js/index.js"></script>
+</html>

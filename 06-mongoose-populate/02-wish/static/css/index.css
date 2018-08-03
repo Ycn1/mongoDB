@@ -1,0 +1,80 @@
+body{
+	background: 100% url('../image/bd.jpeg') no-repeat;
+
+	 background-size:cover;
+	 height:1000px;
+}
+.wish{
+	width: 1000px;
+	height: 700px;
+	border: 1px solid #000;
+	float: left;
+	/*background: url('../image/许愿树.jpeg') no-repeat;*/
+
+}
+.pep{
+	width: 150px;
+	height: 200px;
+	border: 1px solid #000;
+	background: pink;
+	position: relative;
+	overflow: hidden;
+}
+.pep:hover{
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+}
+.close{
+	color: #ccc;
+}
+.close:hover::before,
+.close:hover::after{
+	background: #f00;
+}
+.close::before,
+.close::after{
+	content :"";
+	position: absolute;
+	height: 2px;
+	width:15px;
+	top: 10px;
+	right: 5px;
+	margin-top: -1px;
+	background: #000;
+}
+.close::before{
+	transform: rotate(45deg);
+}
+.close::after{
+	transform: rotate(-45deg);
+}
+.content{
+	width: 300px;
+	height: 350px;
+	border: 1px solid #000;
+	float: right;
+	margin-right: 150px;
+	margin-top: 100px;
+	position: relative;
+}
+.content .text{
+	width: 100%;
+	height: 100%;
+}
+.content a{
+	width: 300px;
+	height: 50px;
+	background: #f10;
+	border-radius: 10px;
+	border: 1px solid #000;
+	display: block;
+	position: absolute;
+	bottom: -70px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 28px;
+	text-decoration: none;
+	color: #000;
+}
+.content a:hover{
+	box-shadow:0 0px 5px 5px rgba(0,0,0,0.2);
+}
